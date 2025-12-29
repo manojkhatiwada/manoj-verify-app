@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TrustID Verify</title>
+  <title>Manoj TrustID Verify</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
     @keyframes slide-in-bottom { from { transform: translateY(1rem); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
@@ -23,6 +24,13 @@
     .delay-150 { animation-delay: 150ms; }
     .delay-300 { animation-delay: 300ms; }
     .delay-500 { animation-delay: 500ms; }
+    
+    /* Ensure the root takes full height for proper flex centering */
+    #root {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
   </style>
 <script type="importmap">
 {
@@ -37,11 +45,9 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
-<body class="bg-slate-950 text-slate-100 overflow-x-hidden">
+<body class="bg-slate-950 text-slate-100 overflow-x-hidden m-0 p-0">
   <div id="root"></div>
-  <!-- Entry point for the build tool -->
   <script type="module" src="/index.tsx"></script>
 </body>
 </html>
