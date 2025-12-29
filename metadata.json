@@ -1,0 +1,7 @@
+{
+  "description": "A professional driver's license verification app using Gemini biometric comparison.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "name": "App"
+}
